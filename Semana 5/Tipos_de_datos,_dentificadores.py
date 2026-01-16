@@ -28,3 +28,4 @@ if datos_validos:
 else:
     print("\nError: El ancho y el alto deben ser mayores que cero.")
 
+
