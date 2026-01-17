@@ -1,9 +1,7 @@
 # ==============================
-# ARCHIVO PRINCIPAL
-# PROGRAMA POO - FIGURAS GEOMÉTRICAS
+# MODELOS - FIGURAS GEOMÉTRICAS
 # ==============================
 
-# -------- CLASE BASE --------
 class Figura:
     """
     Clase base Figura
@@ -21,10 +19,9 @@ class Figura:
         print(f"Figura: {self.nombre}")
 
 
-# -------- CLASE DERIVADA --------
 class Cuadrado(Figura):
     """
-    Clase Cuadrado
+    Clase derivada Cuadrado
     Aplica encapsulación
     """
 
@@ -36,10 +33,9 @@ class Cuadrado(Figura):
         return self.__lado ** 2
 
 
-# -------- CLASE DERIVADA --------
 class Rectangulo(Figura):
     """
-    Clase Rectángulo
+    Clase derivada Rectángulo
     """
 
     def __init__(self, base, altura):
@@ -51,10 +47,9 @@ class Rectangulo(Figura):
         return self.base * self.altura
 
 
-# -------- CLASE DERIVADA --------
 class Circulo(Figura):
     """
-    Clase Círculo
+    Clase derivada Círculo
     """
 
     def __init__(self, radio):
@@ -63,29 +58,3 @@ class Circulo(Figura):
 
     def calcular_area(self):
         return 3.1416 * self.radio ** 2
-
-
-# ==============================
-# FUNCIÓN PRINCIPAL
-# ==============================
-def main():
-    # Crear instancias de las clases
-    cuadrado = Cuadrado(4)
-    rectangulo = Rectangulo(5, 3)
-    circulo = Circulo(2)
-
-    # Lista de figuras (polimorfismo)
-    figuras = [cuadrado, rectangulo, circulo]
-
-    for figura in figuras:
-        figura.mostrar_info()
-        print(f"Área: {figura.calcular_area()}")
-        print("--------------------------")
-
-
-# ==============================
-# EJECUCIÓN DEL PROGRAMA
-# ==============================
-if __name__ == "__main__":
-    main()
-
