@@ -1,4 +1,4 @@
-# Programa principal que convierte temperaturas y muestra datos del usuario
+# Programa principal que convierte temperaturas y muestra datos del usuario.
 
 from modelos.usuario import Usuario
 from servicios.conversor_temperatura import celsius_a_fahrenheit

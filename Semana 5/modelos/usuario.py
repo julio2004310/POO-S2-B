@@ -1,4 +1,4 @@
-# Modelo que representa a un usuario
+# Modelo que representa a un usuario.
 
 class Usuario:
     def __init__(self, nombre, edad):
