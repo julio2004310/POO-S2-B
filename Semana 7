@@ -1,0 +1,12 @@
+## README – Proyecto Cuenta Bancaria
+
+## De qué trata el programa
+El programa simula el funcionamiento básico de una cuenta bancaria utilizando Programación Orientada a Objetos en Python. Permite crear una cuenta, realizar depósitos y retiros, y está organizado por capas para separar modelos, servicios y la ejecución principal.
+
+## Cómo ejecutar main.py
+Para ejecutar el programa se debe abrir el proyecto en PyCharm y ejecutar el archivo main.py haciendo clic derecho sobre él y seleccionando la opción Run. Los resultados se mostrarán en la consola.
+
+## Dónde se evidencia el uso de init y del
+El método init se utiliza al crear el objeto CuentaBancaria para inicializar el titular y el saldo inicial.
+El método del se evidencia cuando el objeto cuenta es eliminado en main.py usando del cuenta1, lo que simula el cierre de la cuenta bancaria y la liberación de recursos.
+
