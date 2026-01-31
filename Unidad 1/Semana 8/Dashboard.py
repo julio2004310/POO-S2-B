@@ -48,7 +48,7 @@ def mostrar_menu():
     ruta_base = os.path.dirname(__file__)
 
     while True:
-        print("\n=== MENÚ PRINCIPAL ===")
+        print("\n=== MENÚ PRINCIPAL ==")
         print("1 - Unidad 1")
         print("2 - Unidad 2")
         print("0 - Salir")
