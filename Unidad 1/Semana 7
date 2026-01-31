@@ -1,4 +1,4 @@
-## README – Proyecto Cuenta Bancaria
+## README – Proyecto Cuenta Bancaria.
 
 ## De qué trata el programa
 El programa simula el funcionamiento básico de una cuenta bancaria utilizando Programación Orientada a Objetos en Python. Permite crear una cuenta, realizar depósitos y retiros, y está organizado por capas para separar modelos, servicios y la ejecución principal.
