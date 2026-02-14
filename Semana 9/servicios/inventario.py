@@ -84,9 +84,9 @@ class Inventario:
 
         return resultados
 
-    # ======================
+    # =====================
     # MOSTRAR INVENTARIO
-    # ======================
+    # =====================
 
     def mostrar_inventario(self):
         if not self.productos:

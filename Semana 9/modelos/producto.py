@@ -31,9 +31,9 @@ class Producto:
     def get_precio(self):
         return self.__precio
 
-    # ======================
+    # =====================
     # SETTERS
-    # ======================
+    # =====================
 
     def set_nombre(self, nombre):
         self.__nombre = nombre
