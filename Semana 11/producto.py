@@ -1,6 +1,6 @@
-# ==========================
+# =========================
 # Clase Producto
-# ==========================
+# =========================
 
 class Producto:
     def __init__(self, id_producto, nombre, cantidad, precio):

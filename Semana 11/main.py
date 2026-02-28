@@ -1,9 +1,9 @@
 from inventario import Inventario
 from producto import Producto
 
-# ==========================
+# =========================
 # Menú interactivo
-# ==========================
+# =========================
 
 def menu():
     inventario = Inventario()

@@ -79,7 +79,7 @@ class Inventario:
         with open(self.archivo, "w") as f:
             json.dump(datos, f, indent=4)
 
-    # ===== Cargar desde archivo =====
+    # ===== Cargar desde archivo ====
     def cargar_archivo(self):
         if os.path.exists(self.archivo):
             with open(self.archivo, "r") as f:
