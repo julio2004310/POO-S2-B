@@ -1,3 +1,4 @@
+#main
 from servicios.inventario import Inventario
 
 

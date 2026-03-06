@@ -1,3 +1,4 @@
+#inventario
 import os
 from servicios.producto import Producto
 
