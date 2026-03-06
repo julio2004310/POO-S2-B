@@ -1,8 +1,7 @@
-# main.py.
-
 from servicios.inventario import Inventario
 
 
+# Mostrar menú del sistema
 def mostrar_menu():
     print("\n===== SISTEMA DE GESTIÓN DE INVENTARIO =====")
     print("1. Añadir producto")
@@ -14,13 +13,16 @@ def mostrar_menu():
 
 
 def main():
+
     inventario = Inventario()
 
     while True:
+
         mostrar_menu()
         opcion = input("Seleccione una opción: ")
 
         if opcion == "1":
+
             try:
                 id_producto = input("Ingrese ID: ")
                 nombre = input("Ingrese nombre: ")
@@ -33,10 +35,12 @@ def main():
                 print("Cantidad o precio inválido.")
 
         elif opcion == "2":
+
             id_producto = input("Ingrese ID del producto a eliminar: ")
             inventario.eliminar_producto(id_producto)
 
         elif opcion == "3":
+
             id_producto = input("Ingrese ID del producto a actualizar: ")
 
             try:
@@ -52,6 +56,7 @@ def main():
                 print("Datos inválidos.")
 
         elif opcion == "4":
+
             nombre = input("Ingrese nombre a buscar: ")
             resultados = inventario.buscar_por_nombre(nombre)
 
@@ -62,9 +67,11 @@ def main():
                 print("No se encontraron productos.")
 
         elif opcion == "5":
+
             inventario.mostrar_inventario()
 
         elif opcion == "6":
+
             print("Saliendo del sistema...")
             break
 

@@ -1,24 +1,15 @@
-# modelos/producto.py
+# Clase que representa un producto del inventario
 
 class Producto:
-    """
-    Clase que representa un producto del inventario.
-    Aplica encapsulamiento usando atributos privados.
-    """
 
-    def __init__(self, id_producto, nombre, cantidad, precio):
-        """
-        Constructor que inicializa los atributos del producto.
-        """
-        self.__id = id_producto
+    # Constructor
+    def __init__(self, id, nombre, cantidad, precio):
+        self.__id = id
         self.__nombre = nombre
         self.__cantidad = cantidad
         self.__precio = precio
 
-    # ======================
-    # GETTERS
-    # ======================
-
+    # Getters
     def get_id(self):
         return self.__id
 
@@ -31,27 +22,16 @@ class Producto:
     def get_precio(self):
         return self.__precio
 
-    # =====================
-    # SETTERS
-    # =====================
-
+    # Setters
     def set_nombre(self, nombre):
         self.__nombre = nombre
 
     def set_cantidad(self, cantidad):
-        if cantidad >= 0:
-            self.__cantidad = cantidad
-        else:
-            print("La cantidad no puede ser negativa.")
+        self.__cantidad = cantidad
 
     def set_precio(self, precio):
-        if precio >= 0:
-            self.__precio = precio
-        else:
-            print("El precio no puede ser negativo.")
+        self.__precio = precio
 
+    # Mostrar información del producto
     def __str__(self):
-        """
-        Método especial para mostrar el producto de forma legible.
-        """
-        return f"ID: {self.__id} | Nombre: {self.__nombre} | Cantidad: {self.__cantidad} | Precio: ${self.__precio:.2f}"
+        return f"ID: {self.__id} | Nombre: {self.__nombre} | Cantidad: {self.__cantidad} | Precio: {self.__precio}"
