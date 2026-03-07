@@ -1,0 +1,26 @@
+{
+    "1234": {
+        "id": "1234",
+        "nombre": "sardina",
+        "cantidad": 40,
+        "precio": 2.0
+    },
+    "2345": {
+        "id": "2345",
+        "nombre": "fideos",
+        "cantidad": 10,
+        "precio": 1.15
+    },
+    "3456": {
+        "id": "3456",
+        "nombre": "tilapia",
+        "cantidad": 100,
+        "precio": 6.0
+    },
+    "5678": {
+        "id": "5678",
+        "nombre": "gallina",
+        "cantidad": 20,
+        "precio": 6.0
+    }
+}
